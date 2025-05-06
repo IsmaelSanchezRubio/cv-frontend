@@ -8,6 +8,7 @@ import Experiencia from './components/Experiencia';
 import Formacion from './components/Formacion';
 import Habilidades from './components/Habilidades';
 import Contacto from './components/Contacto';
+import Accordion from './components/Accordion';
 
 const fondos = {
   experiencia: "#dfedff",
@@ -20,7 +21,7 @@ function App() {
   const isMobile = useIsMobile();
   const [seccionActiva, setSeccionActiva] = useState("experiencia");
 
-  // Solo hacemos scroll automático si NO es móvil
+  // Solo hacer scroll animado en escritorio
   useEffect(() => {
     if (!isMobile) {
       const timeout = setTimeout(() => {
@@ -76,12 +77,21 @@ function App() {
 
       <main className="p-6 max-w-3xl mx-auto space-y-6">
         <Perfil />
+
         {isMobile ? (
           <>
-            <Experiencia />
-            <Formacion />
-            <Habilidades />
-            <Contacto />
+            <Accordion titulo="Experiencia">
+              <Experiencia />
+            </Accordion>
+            <Accordion titulo="Formación">
+              <Formacion />
+            </Accordion>
+            <Accordion titulo="Habilidades">
+              <Habilidades />
+            </Accordion>
+            <Accordion titulo="Contacto">
+              <Contacto />
+            </Accordion>
           </>
         ) : (
           <>
@@ -89,7 +99,9 @@ function App() {
               seccionActiva={seccionActiva}
               setSeccionActiva={setSeccionActiva}
             />
-            <AnimatePresence mode="wait">{renderSeccion()}</AnimatePresence>
+            <AnimatePresence mode="wait">
+              {renderSeccion()}
+            </AnimatePresence>
           </>
         )}
       </main>
