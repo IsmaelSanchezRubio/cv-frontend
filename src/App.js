@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import useIsMobile from './hooks/useIsMobile';
 import Header from './components/Header';
 import Perfil from './components/Perfil';
 import Navegacion from './components/Navegacion';
@@ -16,36 +17,31 @@ const fondos = {
 };
 
 function App() {
+  const isMobile = useIsMobile();
   const [seccionActiva, setSeccionActiva] = useState("experiencia");
 
+  // Solo hacemos scroll automático si NO es móvil
   useEffect(() => {
-    const scrollToTopSmooth = () => {
-      const duration = 200; // duración total en milisegundos
-      const start = window.scrollY;
-      const startTime = performance.now();
-  
-      const animate = (currentTime) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const ease = 1 - Math.pow(1 - progress, 3); // cubic easing out
-  
-        window.scrollTo(0, start * (1 - ease));
-  
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      };
-  
-      requestAnimationFrame(animate);
-    };
-  
-    const timeout = setTimeout(() => {
-      scrollToTopSmooth();
-    }, 50); // esperar un poco tras el cambio de sección
-  
-    return () => clearTimeout(timeout);
-  }, [seccionActiva]);
-  
+    if (!isMobile) {
+      const timeout = setTimeout(() => {
+        const duration = 600;
+        const start = window.scrollY;
+        const startTime = performance.now();
+
+        const animate = (currentTime) => {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          window.scrollTo(0, start * (1 - ease));
+          if (progress < 1) requestAnimationFrame(animate);
+        };
+
+        requestAnimationFrame(animate);
+      }, 100);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [seccionActiva, isMobile]);
 
   const renderSeccion = () => {
     const componentes = {
@@ -70,7 +66,9 @@ function App() {
 
   return (
     <div
-      style={{ backgroundColor: fondos[seccionActiva] }}
+      style={{
+        backgroundColor: fondos[isMobile ? "experiencia" : seccionActiva],
+      }}
       className="min-h-screen transition-colors duration-500"
     >
       <Header />
@@ -78,13 +76,22 @@ function App() {
 
       <main className="p-6 max-w-3xl mx-auto space-y-6">
         <Perfil />
-        <Navegacion
-          seccionActiva={seccionActiva}
-          setSeccionActiva={setSeccionActiva}
-        />
-        <AnimatePresence mode="wait">
-          {renderSeccion()}
-        </AnimatePresence>
+        {isMobile ? (
+          <>
+            <Experiencia />
+            <Formacion />
+            <Habilidades />
+            <Contacto />
+          </>
+        ) : (
+          <>
+            <Navegacion
+              seccionActiva={seccionActiva}
+              setSeccionActiva={setSeccionActiva}
+            />
+            <AnimatePresence mode="wait">{renderSeccion()}</AnimatePresence>
+          </>
+        )}
       </main>
     </div>
   );
