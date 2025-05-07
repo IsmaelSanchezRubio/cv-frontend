@@ -12,7 +12,7 @@ import Accordion from './components/Accordion';
 
 const fondos = {
   experiencia: "#cdd7ff",
-  formacion: "#c8fffe",
+  formacion: "#d4fffe",
   habilidades: "#dcdcdc",
   contacto: "#e7e7e7",
 };
