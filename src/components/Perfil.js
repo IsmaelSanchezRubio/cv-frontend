@@ -10,7 +10,7 @@ export default function Perfil() {
       <div className="flex-1">
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">Perfil Profesional</h2>
         <p className="text-gray-700 mb-4">
-          Técnico superior en desarrollo aplicaciones multiplataforma y e instalaciones de telecomunicaciones con orientación a frontend.
+          Técnico superior en desarrollo aplicaciones multiplataforma e instalaciones de telecomunicaciones con orientación a frontend.
           Apasionado por la tecnología, el aprendizaje continuo y la creación de soluciones intuitivas.
           Busco formar parte de un equipo dinámico donde pueda aportar valor, seguir creciendo
           y desarrollar proyectos con impacto.
@@ -22,8 +22,8 @@ export default function Perfil() {
           <p><strong>📧 Correo:</strong> 3ismaelsanchez@gmail.com</p>
           <p>
             <strong>🔗 Redes:</strong>{' '}
-            <a href="https://www.linkedin.com/in/ismaelsanchezrubio/" className="text-blue-500 hover:underline mr-4">LinkedIn</a>
-            <a href="[https://github.com/IsmaelSanchezRubio]" className="text-blue-500 hover:underline">GitHub</a>
+            <a href="https://www.linkedin.com/in/ismaelsanchezrubio/" target="_blank" className="text-blue-500 hover:underline mr-4">LinkedIn</a>
+            <a href="https://github.com/IsmaelSanchezRubio" target="_blank" className="text-blue-500 hover:underline">GitHub</a>
           </p>
         </div>
       </div>
