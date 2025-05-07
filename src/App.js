@@ -11,10 +11,10 @@ import Contacto from './components/Contacto';
 import Accordion from './components/Accordion';
 
 const fondos = {
-  experiencia: "#dfedff",
-  formacion: "#dfffe0",
-  habilidades: "#fff7df",
-  contacto: "#ffe4fd",
+  experiencia: "#cdd7ff",
+  formacion: "#c8fffe",
+  habilidades: "#dcdcdc",
+  contacto: "#e7e7e7",
 };
 
 function App() {
