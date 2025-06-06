@@ -10,13 +10,6 @@ import Habilidades from './components/Habilidades';
 import Contacto from './components/Contacto';
 import Accordion from './components/Accordion';
 
-const fondos = {
-  experiencia: "#cdd7ff",
-  formacion: "#d4fffe",
-  habilidades: "#dcdcdc",
-  contacto: "#e7e7e7",
-};
-
 function App() {
   const isMobile = useIsMobile();
   const [seccionActiva, setSeccionActiva] = useState("experiencia");
@@ -68,12 +61,17 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: fondos[isMobile ? "experiencia" : seccionActiva],
+        backgroundImage: `url("/bg_cv.png")`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        backgroundAttachment: "fixed",
+        minHeight: "100vh"
       }}
-      className="min-h-screen transition-colors duration-500"
+      className="min-h-screen"
     >
       <Header />
-      <div className="h-24" />
+      <div className="h-12" />
 
       <main className="p-6 max-w-3xl mx-auto space-y-6">
         <Perfil />

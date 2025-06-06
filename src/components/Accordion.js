@@ -8,7 +8,7 @@ export default function Accordion({ titulo, children }) {
     <div className="mb-4 border border-gray-300 rounded">
       <button
         onClick={() => setAbierto(!abierto)}
-        className="w-full text-left px-4 py-3 font-semibold bg-white text-gray-800 hover:bg-gray-100 transition"
+        className="w-full text-left px-4 py-3 font-semibold bg-white/65 text-gray-800 hover:bg-gray-100 transition"
       >
         {titulo}
       </button>
@@ -21,7 +21,7 @@ export default function Accordion({ titulo, children }) {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden px-4 py-3 bg-white text-sm text-gray-700"
+            className="overflow-hidden px-4 py-3 bg-white/65 text-sm text-gray-700"
           >
             {children}
           </motion.div>

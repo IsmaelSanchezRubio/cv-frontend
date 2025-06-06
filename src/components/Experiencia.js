@@ -1,6 +1,6 @@
 export default function Experiencia() {
     return (
-      <section id="experiencia" className="bg-white rounded-lg shadow-md p-6 mb-6">
+      <section id="experiencia" className="bg-white/65 rounded-lg shadow-md p-6 mb-6">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Experiencia Profesional</h2>
   
         {/* EXPERIENCIA EN EL SECTOR */}
@@ -19,7 +19,7 @@ export default function Experiencia() {
             <p><strong>Cabling</strong> – Formación en Centros de Trabajo (Huelva, 2018)</p>
             <ul className="list-disc list-inside text-sm text-gray-700">
               <li>Instalación, gestión y mantenimiento de equipos informáticos en entornos empresariales.</li>
-              <li>Redes locales, VoIP, servidores, sistemas de seguridad, vigilancia y telecomunicaciones.</li>
+              <li>Redes locales, VoIP, servidores, sistemas de CCTV, seguridad, sonido y radiodifusión.</li>
             </ul>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Experiencia() {
             <p><strong>JIGGING CARUVA</strong> (2014–2015)</p>
             <ul className="list-disc list-inside text-sm text-gray-700">
               <li>CEO de pyme dedicada al diseño, producción y venta de material deportivo.</li>
-              <li>Responsable de marketing, diseño de producto y gestión internacional.</li>
+              <li>Responsable de marketing, diseño de producto, manufacturación y venta internacional.</li>
             </ul>
           </div>
         </div>

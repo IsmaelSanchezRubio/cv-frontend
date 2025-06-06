@@ -1,16 +1,16 @@
 export default function Perfil() {
   return (
-    <section className="bg-white rounded-lg shadow-md p-6 mb-6 flex flex-col sm:flex-row gap-6">
+    <section className="bg-white/65 rounded-lg shadow-md p-6 mb-6 flex flex-col sm:flex-row gap-6">
       <img
         src="/ismael.jpg"
         alt="Foto de Ismael"
-        className="w-32 h-32 rounded-full object-cover border-4 border-gray-300"
+        className="w-32 h-32 rounded-full object-cover border-14 border-gray-300"
       />
 
       <div className="flex-1">
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">Perfil Profesional</h2>
         <p className="text-gray-700 mb-4">
-          Técnico superior en desarrollo de aplicaciones multiplataforma e instalaciones de telecomunicaciones con orientación a frontend.
+          Técnico superior en Desarrollo de Aplicaciones Multiplataforma e Instalaciones de Telecomunicaciones con orientación a frontend.
           Apasionado por la tecnología, el aprendizaje continuo y la creación de soluciones intuitivas.
           Busco formar parte de un equipo dinámico donde pueda aportar valor, seguir creciendo
           y desarrollar proyectos con impacto.

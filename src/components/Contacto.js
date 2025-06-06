@@ -1,6 +1,6 @@
 export default function Contacto() {
     return (
-      <section id="contacto" className="bg-white rounded-lg shadow-md p-6 mb-6">
+      <section id="contacto" className="bg-white/65 rounded-lg shadow-md p-6 mb-6">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contacto</h2>
   
         <p className="text-gray-700 mb-4">

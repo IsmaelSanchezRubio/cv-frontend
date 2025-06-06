@@ -1,6 +1,6 @@
 export default function Formacion() {
   return (
-    <section id="formacion" className="bg-white rounded-lg shadow-md p-6 mb-6">
+    <section id="formacion" className="bg-white/65 rounded-lg shadow-md p-6 mb-6">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Formación</h2>
 
       {/* Formación académica */}
@@ -14,7 +14,7 @@ export default function Formacion() {
           <div>
             <p><strong>Técnico en Instalaciones de Telecomunicaciones</strong> (2016–2018)</p>
             <p className="text-sm">
-              Instalación, mantenimiento y gestión de sistemas de telecomunicación, redes de datos, sistemas de vigilancia, sonido y domótica. <strong>Matrícula de Honor</strong>.
+              Instalación, mantenimiento y gestión de sistemas de telecomunicaciones, redes de datos, sistemas de vigilancia, sonido y domótica. <strong>Matrícula de Honor</strong>.
             </p>
           </div>
         </div>
