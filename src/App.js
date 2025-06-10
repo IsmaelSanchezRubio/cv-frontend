@@ -61,7 +61,8 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url("/bg_cv.png")`,
+        backgroundColor: "#1e1e1e", // negro suave
+        backgroundImage: `url("bk2.png")`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
@@ -71,9 +72,9 @@ function App() {
       className="min-h-screen"
     >
       <Header />
-      <div className="h-12" />
+      <div className="h-10" />
 
-      <main className="p-6 max-w-3xl mx-auto space-y-6">
+      <main className="p-1 max-w-3xl mx-auto space-y-6">
         <Perfil />
 
         {isMobile ? (

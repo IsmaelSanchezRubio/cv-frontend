@@ -5,10 +5,10 @@ export default function Accordion({ titulo, children }) {
   const [abierto, setAbierto] = useState(false);
 
   return (
-    <div className="mb-4 border border-gray-300 rounded">
+    <div className="mb-4 border border-white/20 rounded">
       <button
         onClick={() => setAbierto(!abierto)}
-        className="w-full text-left px-4 py-3 font-semibold bg-white/65 text-gray-800 hover:bg-gray-100 transition"
+        className="w-full text-left px-4 py-3 font-semibold bg-white/65 text-white bg-white/15 transition"
       >
         {titulo}
       </button>
@@ -21,7 +21,7 @@ export default function Accordion({ titulo, children }) {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden px-4 py-3 bg-white/65 text-sm text-gray-700"
+            className="overflow-hidden px-4 py-3 bg-white/5 text-sm text-white"
           >
             {children}
           </motion.div>

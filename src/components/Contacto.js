@@ -1,10 +1,10 @@
 export default function Contacto() {
     return (
-      <section id="contacto" className="bg-white/65 rounded-lg shadow-md p-6 mb-6">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contacto</h2>
+      <section id="contacto" className="transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/10">
+        <h2 className="text-2xl font-semibold text-[#2095ff] mb-4">Contacto</h2>
   
-        <p className="text-gray-700 mb-4">
-          ¿Te interesa trabajar conmigo o colaborar en un proyecto? Puedes escribirme directamente:
+        <p className="text-white mb-4">
+          ¿Te interesa trabajar conmigo o colaborar en un proyecto? Puedes escribirme directamente a través de:
         </p>
   
         <div className="flex flex-col sm:flex-row gap-4">

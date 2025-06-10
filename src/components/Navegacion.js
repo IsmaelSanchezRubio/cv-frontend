@@ -14,7 +14,7 @@ export default function Navegacion({ seccionActiva, setSeccionActiva }) {
             onClick={() => setSeccionActiva(seccion)}
             className={`text-base sm:text-lg font-semibold tracking-wide transition-colors duration-200 ${
               seccionActiva === seccion
-                ? "text-blue-700"
+                ? "text-[#2095ff]"
                 : "text-white hover:text-blue-500"
             }`}
           >
@@ -23,7 +23,7 @@ export default function Navegacion({ seccionActiva, setSeccionActiva }) {
           {seccionActiva === seccion && (
             <motion.div
               layoutId="underline"
-              className="absolute bottom-0 left-1 right-1 h-1.5 bg-blue-700 rounded"
+              className="absolute bottom-0 left-1 right-1 h-1.5 bg-[#2095ff] rounded"
               transition={{ type: "spring", stiffness: 500, damping: 30 }}
             />
           )}

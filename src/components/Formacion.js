@@ -1,12 +1,12 @@
 export default function Formacion() {
   return (
-    <section id="formacion" className="bg-white/65 rounded-lg shadow-md p-6 mb-6">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Formación</h2>
+    <section id="formacion" className="transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/10">
+      <h2 className="text-2xl font-semibold text-[#2095ff] mb-4">Formación</h2>
 
       {/* Formación académica */}
       <div className="mb-6">
-        <h3 className="text-xl font-semibold text-blue-700 mb-2">Formación académica</h3>
-        <div className="space-y-4 text-gray-700">
+        <h3 className="text-xl font-semibold text-[#99cfff] mb-2">Formación académica</h3>
+        <div className="space-y-4 text-white">
           <div>
             <p><strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</strong> (2021–2024)</p>
             <p className="text-sm">Formación especializada en programación multiplataforma, bases de datos, diseño de interfaces, acceso a datos, servicios web y aplicaciones móviles.</p>
@@ -22,8 +22,8 @@ export default function Formacion() {
 
       {/* Formación no reglada */}
       <div>
-        <h3 className="text-xl font-semibold text-blue-700 mb-2">Formación no reglada</h3>
-        <div className="text-gray-700 text-sm space-y-1">
+        <h3 className="text-xl font-semibold text-[#99cfff] mb-2">Formación no reglada</h3>
+        <div className="text-white text-sm space-y-1">
           <p><strong>Fundamentos de IA de Google</strong> – Coursera (2025)</p>
           <ul className="list-disc list-inside">
             <li>Utilización de herramientas de IA generativa para desarrollar ideas y contenidos, tomar decisiones con mayor conocimiento de causa y agilizar tareas diarias.</li>
