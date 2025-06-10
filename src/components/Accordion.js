@@ -8,7 +8,7 @@ export default function Accordion({ titulo, children }) {
     <div className="mb-4 border border-white/20 rounded">
       <button
         onClick={() => setAbierto(!abierto)}
-        className="w-full text-left px-4 py-3 font-semibold bg-white/65 text-white bg-white/15 transition"
+        className="w-full text-left px-4 py-3 font-semibold bg-white/15 text-white bg-white/15 transition"
       >
         {titulo}
       </button>
