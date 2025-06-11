@@ -1,9 +1,9 @@
 export default function Contacto() {
     return (
       <section id="contacto" className="transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/10">
-        <h2 className="text-2xl font-semibold text-[#2095ff] mb-4">Contacto</h2>
+        <h2 className="text-3xl tracking-wide leading-relaxed font-semibold text-[#2095ff] mb-4">Contacto</h2>
   
-        <p className="text-white mb-4">
+        <p className="text-white tracking-wide leading-relaxed text-lg mb-4">
           ¿Te interesa trabajar conmigo o colaborar en un proyecto? Puedes escribirme directamente a través de:
         </p>
   

@@ -8,15 +8,15 @@ export default function Perfil() {
       />
 
       <div className="flex-1">
-        <h2 className="text-2xl font-semibold text-[#2095ff] mb-4">Perfil Profesional</h2>
-        <p className="text-white mb-4">
+        <h2 className="text-3xl tracking-wide leading-relaxed font-semibold text-[#2095ff] mb-4">Perfil Profesional</h2>
+        <p className="text-white text-lg tracking-wide leading-relaxed mb-4">
           Técnico superior en Desarrollo de Aplicaciones Multiplataforma e Instalaciones de Telecomunicaciones con orientación a frontend.
           Apasionado por la tecnología, el aprendizaje continuo y la creación de soluciones intuitivas.
           Busco formar parte de un equipo dinámico donde pueda aportar valor, seguir creciendo
           y desarrollar proyectos con impacto.
         </p>
 
-        <div className="text-sm text-white space-y-1">
+        <div className="text-base text-white tracking-wide leading-relaxed space-y-1">
           <p><strong>📍 Ubicación:</strong> Huelva, Andalucía, España</p>
           <p><strong>📞 Teléfono:</strong> 697 183 680</p>
           <p><strong>📧 Correo:</strong> 3ismaelsanchez@gmail.com</p>

@@ -4,11 +4,11 @@ export default function Navegacion({ seccionActiva, setSeccionActiva }) {
   const secciones = ["experiencia", "formacion", "habilidades", "contacto"];
 
   return (
-    <nav className="flex justify-center space-x-4 mb-6">
+    <nav className="flex justify-center space-x-12 mb-6 ">
       {secciones.map((seccion) => (
         <div
           key={seccion}
-          className="relative bg-white/10 rounded-lg px-7 py-2 shadow-sm hover:shadow-md transition-shadow duration-200"
+          className="border border-white/10 relative bg-white/10 rounded-lg px-12 py-3 shadow-sm hover:shadow-md transition-shadow duration-200"
         >
           <button
             onClick={() => setSeccionActiva(seccion)}

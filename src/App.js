@@ -72,9 +72,9 @@ function App() {
       className="min-h-screen"
     >
       <Header />
-      <div className="h-10" />
+      <div className="h-8" />
 
-      <main className="p-1 max-w-3xl mx-auto space-y-6">
+      <main className="p-4 max-w-5xl mx-auto space-y-6">
         <Perfil />
 
         {isMobile ? (
