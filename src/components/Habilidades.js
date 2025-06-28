@@ -9,6 +9,7 @@ export default function Habilidades() {
           <ul className="list-disc tracking-wide leading-relaxed list-inside text-lg text-white space-y-1">
             <li>Manejo de IDEs: Visual Studio, Android Studio, SQL Server, PyCharm.</li>
             <li>Lenguajes de programación: C#, Python, Java, Kotlin, SQL.</li>
+            <li>Manejo de librerias (Django, Pandas, etc).</li>
             <li>Diseño y mantenimiento de bases de datos.</li>
             <li>Conocimiento de estructuras de datos, control de versiones y buenas prácticas de desarrollo.</li>
           </ul>
