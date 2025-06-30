@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Navegacion({ seccionActiva, setSeccionActiva }) {
-  const secciones = ["experiencia", "formacion", "habilidades", "contacto"];
+  const secciones = ["experiencia", "formación", "habilidades", "contacto"];
 
   return (
     <nav className="flex justify-center space-x-12 mb-6 ">
