@@ -13,7 +13,7 @@ export default function Formacion() {
            <p><strong>- Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</strong> (2021–2024)</p>
            <ul className="list-disc list-inside tracking-wide leading-relaxed text-lg">
              <li>Programación Orientada a Objetos (POO).</li>
-             <li>Desarrollo de aplicaciones móviles, aplicaciones WPF y aplicaciones web (front-end y back-end).</li>
+             <li>Desarrollo de aplicaciones de escritorio (WPF), web y Android (front-end y back-end).</li>
              <li>Manejo de bases de datos y despliegue en entornos productivos.</li>
              <li>ERP, CRM, entornos de desarrollo e integración continua.</li>
              <li>Seguridad informática y metodologías ágiles de trabajo.</li>
@@ -24,7 +24,7 @@ export default function Formacion() {
          <div className="mb-4 text-lg tracking-wide leading-relaxed text-white">
             <p><strong>- Técnico en Instalaciones de Telecomunicaciones</strong> (2016–2018) <strong>Matrícula de Honor</strong></p>
            <ul className="list-disc list-inside tracking-wide leading-relaxed text-lg">
-             <li>Electricidad y electrónica básica aplicada a las telecomunicaciones.</li>
+             <li>Electricidad y electrónica (analógica y digital) aplicada a las telecomunicaciones.</li>
              <li>Redes de voz, datos y sistemas de telecomunicaciones en edificios.</li>
              <li>Sistemas de seguridad electrónica, fibra óptica y megafonía.</li>
              <li>Instalación de sistemas audiovisuales y normativa vigente.</li>
@@ -43,7 +43,7 @@ export default function Formacion() {
             <p><strong>- Python TOTAL</strong> – Udemy, Escuela Directa (2025)</p>
             <ul className="list-disc tracking-wide leading-relaxed text-lg list-inside">
               <li>Manejo profesional de Python en PyCharm y Google Colab.</li>
-              <li>Desarrollo web con Django, interfaces gráficas de usuario (IGU) y entornos virtuales.</li>
+              <li>Desarrollo Web con Django, interfaces gráficas de usuario (IGU) y entornos virtuales.</li>
               <li>Aplicaciones en Machine Learning y Data Science.</li>
               <li>Procesamiento de datos con Pandas y técnicas de Web Scraping.</li>
             </ul>
